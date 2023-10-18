@@ -16,11 +16,8 @@ import {MatMenuModule} from '@angular/material/menu';
 import { MatSelectModule } from '@angular/material/select';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { MatDividerModule } from '@angular/material/divider';
-// import { NGX_MAT_COLOR_FORMATS } from '@angular-material-components/color-picker';
 import { NgxMatColorPickerModule } from 'ngx-mat-color-picker';
 import { MAT_COLOR_FORMATS } from '@angular/material/core';
-// import { MAT_COLOR_FORMATS } from '@angular/material/core';
-import { NGX_MAT_COLOR_FORMATS } from 'ngx-mat-color-picker';
 
 
 
@@ -37,6 +34,8 @@ import { NGX_MAT_COLOR_FORMATS } from 'ngx-mat-color-picker';
   declarations: [
     AppComponent,
     ItemDetailsComponent,
+  
+    
   
   ],
   imports: [
@@ -55,8 +54,6 @@ import { NGX_MAT_COLOR_FORMATS } from 'ngx-mat-color-picker';
     MatSelectModule,
     CdkAccordionModule,
     MatDividerModule,
-    // MAT_COLOR_FORMATS,
-    NGX_MAT_COLOR_FORMATS,
     NgxMatColorPickerModule,
     MAT_COLOR_FORMATS
 
