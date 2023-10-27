@@ -14,7 +14,7 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { 
-    path: '', 
+    path: 'home', 
     component: HomeComponent},
   { 
     path: 'Cart', 
@@ -43,4 +43,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

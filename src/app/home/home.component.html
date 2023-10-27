@@ -1,4 +1,139 @@
-
-<!-- <link rel="stylesheet" href="https://fontawesome.com/">
-<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css"> -->
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  
+    <mat-grid-list [cols]="breakpoint" rowHeight="2:0.5" (window:resize)="onResize($event)">
+  
+  
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <img src="../assets/BOZD/LapBag/1696882992098.jpg" class="card-img-top h-75" alt="Product 1">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Laptop Bag</h5>
+                <a href="#" class="btn btn-primary custom-link">View Details</a>
+              </div>
+            </div>
+          </div>
+      
+          
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <img src="../assets/BOZD/belt/1696883737053.jpg" class="card-img-top h-75" alt="Product 1">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Belt</h5>
+                <a href="#" class="btn btn-primary custom-link">View Details</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <img src="../assets/BOZD/Handbag/1696882558494.jpg" class="card-img-top h-75" alt="Product 1">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Hand Bag</h5>
+                <a href="#" class="btn btn-primary custom-link">View Details</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <img src="../assets/BOZD/Heels/1696882992043.jpg" class="card-img-top h-75" alt="Product 1">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Laptop Bag</h5>
+                <a href="#" class="btn btn-primary custom-link">View Details</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <img src="../assets/BOZD/Men shoe/1696883738782.jpg" class="card-img-top h-75" alt="Product 1">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Men's Shoe</h5>
+                <a href="#" class="btn btn-primary custom-link">View Details</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <img src="../assets/BOZD/Polo/1697113651521.jpg" class="card-img-top h-75" alt="Product 1">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Polo</h5>
+                <a href="#" class="btn btn-primary custom-link">View Details</a>
+              </div>
+            </div>
+          </div>
+  
+  
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <img src="../assets/BOZD/purse/1696883736997.jpg" class="card-img-top h-75" alt="Product 1">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Purse</h5>
+                <a href="#" class="btn btn-primary custom-link">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <img src="../assets/BOZD/sandal/1696882992471.jpg" class="card-img-top h-75" alt="Product 1">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Sandal</h5>
+                <a href="#" class="btn btn-primary custom-link">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <img src="../assets/BOZD/Shirt/1697113651611.jpg" class="card-img-top h-75" alt="Product 1">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Shirt</h5>
+                <a href="#" class="btn btn-primary custom-link">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <img src="../assets/BOZD/Slippers/1696882693946.jpg" class="card-img-top" alt="Product 1">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Flat</h5>
+                <a href="#" class="btn btn-primary custom-link">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <img src="../assets/BOZD/sneakers/1696882693630.jpg" class="card-img-top h-75" alt="Product 1">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Sneakers</h5>
+                <a href="#" class="btn btn-primary custom-link">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <img src="../assets/BOZD/Trouser/1697113651966.jpg" class="card-img-top h-75" alt="Product 1">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Trousers</h5>
+                <a href="#" class="btn btn-primary custom-link">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    
+  <!-- Add Bootstrap JS (optional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  
+  
