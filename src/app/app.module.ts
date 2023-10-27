@@ -12,21 +12,21 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatMenuModule} from '@angular/material/menu';
 import { MatSelectModule } from '@angular/material/select';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { MatDividerModule } from '@angular/material/divider';
+import { RouterModule, Routes } from '@angular/router';
+import { CartComponent } from './app/cart/cart.component';
+import { SearchComponent } from './search/search.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { AuthenticationPageComponent } from './authentication-page/authentication-page.component';
+import { SignInComponent } from './authentication-page/sign-in/sign-in.component';
+import { TopBarComponent } from './top-bar/top-bar.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { HomeComponent } from './home/home.component';
 import { NgxMatColorPickerModule } from 'ngx-mat-color-picker';
-import { MAT_COLOR_FORMATS } from '@angular/material/core';
-
-
-
-
-// import { MDBBootstrapModule } from 'angular-bootstrap-md';
-
-
-
-
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 
@@ -34,10 +34,18 @@ import { MAT_COLOR_FORMATS } from '@angular/material/core';
   declarations: [
     AppComponent,
     ItemDetailsComponent,
-  
+    CartComponent,
+    SearchComponent,
+    ProductListComponent,
+    AuthenticationPageComponent,
+    SignInComponent,
+    TopBarComponent,
+    NavBarComponent,
+    HomeComponent,
     
-  
-  ],
+    
+    ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -54,12 +62,9 @@ import { MAT_COLOR_FORMATS } from '@angular/material/core';
     MatSelectModule,
     CdkAccordionModule,
     MatDividerModule,
+    RouterModule,
     NgxMatColorPickerModule,
-    MAT_COLOR_FORMATS
-
-     
-    // MDBBootstrapModule.forRoot(), 
-
+    MatGridListModule
     
   ],
   providers: [],

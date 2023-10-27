@@ -1,133 +1,400 @@
-<!DOCTYPE html>
-<html lang="en">
+<script src="https://kit.fontawesome.com/3b1ca000cb.js"></script> 
+
+<header>
+        <nav>
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <div class="search__bar__header">
+                <input type="text">
+                <input type="button" value="search">
+            </div>
+            <div class="cart__header__desktop">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                <span>50</span>
+            </div>
+        </nav>
+    </header>
+    <div class="main__navigations">
+        <div class="main__navigations__div">
+            <ul class="main__navigations__div__ul">
+                <li class="main__navigations__div__li on__mobile_d_none" style="font-weight: bold;"><a href="">Home</a></li>
+                <li class="main__navigations__div__li on__mobile_d_none">
+                    <a class="categ" style="font-weight: bold;">Categories <i class="fas fa-caret-down"></i></a>
+                    <div class="div__categories__items">
+                      <p><a routerLink="/nav-bar">Bag</a></p>
+                      <p><a href="">Polo</a></p>
+                      <p><a href="">T-Shirt</a></p>
+                      <p><a href="">Laptop Bag</a></p>
+                      <p><a href="">Men's Shoe</a></p>
+                      <p><a href="">Sneakers</a></p>
+                      <p><a href="">Trousers</a></p>
+                      <p><a href="">Women's Shoe</a></p>
+                      <p><a href="">Sleepwear</a></p>
+                      <p><a href="">Flat</a></p>
+                    </div>
+                </li>
+                <li class="main__navigations__div__li save__from__left"><a routerlink="" class="anchor__remains__same" style="font-weight: bold;"><i class="fas fa-user"></i>Track Order</a></li>
+                <li class="main__navigations__div__li">
+                    <a href="" class="anchor__remains__same" style="padding-bottom: 0;font-weight: bold;">Logout <i class="fas fa-sign-out-alt"></i> </a>
+                </li>
+                <div class="bars save__from__right">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="mobile__nav__fade__and__show">
+        <div class="mobile__nav__fade__and__show__text">
+            <li><a routerLink="">Home</a></li>
+            <li>
+                <a routerLink="">Categories</a>
+                <div>
+                  <p><a routerLink="/nav-bar">Bag</a></p>
+                  <p><a href="">Polo</a></p>
+                  <p><a href="">T-Shirt</a></p>
+                  <p><a href="">Laptop Bag</a></p>
+                  <p><a href="">Men's Shoe</a></p>
+                  <p><a href="">Sneakers</a></p>
+                  <p><a href="">Trousers</a></p>
+                  <p><a href="">Women's Shoe</a></p>
+                  <p><a href="">Sleepwear</a></p>
+                  <p><a href="">Flat</a></p>
+                </div>
+            </li>
+        </div>
+    </div>
+    <div class="mobile__nav__fade__and__show__circle"></div>
+
+    <br><br><br><br><br><br>
+
+<!-- <div class="ink">
+
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="image-fluid" alt="Hollywood Sign on The Hill"/>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a longer card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer.
+          </p> -->
+        <!-- </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top" h="200" alt="Palm Springs Road"/>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a longer card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top" alt="Skyscrapers"/>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a longer card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+ -->
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <script src="https://kit.fontawesome.com/3b1ca000cb.js"></script> 
+
+
+<header>
+        <nav>
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <div class="search__bar__header">
+                <input type="text">
+                <input type="button" value="search">
+            </div>
+            <div class="cart__header__desktop">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+              <span>50</span>
+            </div>
+        </nav>
+    </header>
+    <div class="main__navigations">
+        <div class="main__navigations__div">
+            <ul class="main__navigations__div__ul">
+                <li class="main__navigations__div__li on__mobile_d_none" style="font-weight: bold;"><a routerLink="/Cart">Home</a></li>
+                <li class="main__navigations__div__li on__mobile_d_none">
+                    <a class="categ" style="font-weight: bold;">Categories <i class="fas fa-caret-down"></i></a>
+                    <div class="div__categories__items">
+                        <p><a href="">Bag</a></p>
+                    <p><a href="">Polo</a></p>
+                    <p><a href="">T-Shirt</a></p>
+                    <p><a href="">Laptop Bag</a></p>
+                    <p><a href="">Men's Shoe</a></p>
+                    <p><a href="">Sneakers</a></p>
+                    <p><a href="">Trousers</a></p>
+                    <p><a href="">Women's Shoe</a></p>
+                    <p><a href="">Sleepwear</a></p>
+                    <p><a href="">Flat</a></p>
+                    </div>
+                </li>
+                <li class="main__navigations__div__li save__from__left"><a href="" class="anchor__remains__same" style="font-weight: bold;"><i class="fas fa-user"></i> Hello, parimal mahindrakar.</a></li>
+                <li class="main__navigations__div__li">
+                    <a href="" class="anchor__remains__same" style="padding-bottom: 0;font-weight: bold;">Logout <i class="fas fa-sign-out-alt"></i> </a>
+                </li>
+                <div class="bars save__from__right">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="mobile__nav__fade__and__show">
+        <div class="mobile__nav__fade__and__show__text">
+            <li><a routerLink="/">Home</a></li>
+            <li>
+                <a href="">Categories</a>
+                <div>
+                    <p><a routerLink="/nav-bar">Bag</a></p>
+                    <p><a href="">Polo</a></p>
+                    <p><a href="">T-Shirt</a></p>
+                    <p><a href="">Laptop Bag</a></p>
+                    <p><a href="">Men's Shoe</a></p>
+                    <p><a href="">Sneakers</a></p>
+                    <p><a href="">Trousers</a></p>
+                    <p><a href="">Women's Shoe</a></p>
+                    <p><a href="">Sleepwear</a></p>
+                    <p><a href="">Flat</a></p>
+
+                </div>
+            </li>
+        </div>
+    </div> -->
+    <!-- <div class="mobile__nav__fade__and__show__circle"></div>
+
+<mat-sidenav-container>
+    <mat-sidenav mode="over" align="start" opened>
+        Sidenav content
+    </mat-sidenav>
+    <mat-sidenav-content class="mat-elevation-z8">
+
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+     Body 
+    
+</mat-sidenav-container> -->
+
+<!-- <nav class="navbar  navbar-light  bg-light navbar-expand-sm">
+  <a class="navbar-brand" href="#">My Brand</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href='#'>First Linkl</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href='#'>Second Linkl</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href='#'>Third Linkl</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href='#'>Fourth Linkl</a>
+      </li>
+  </ul>
+ </div>
+</nav>
+ -->
+
+ <!-- <div class="dred">
+ <div class="card">
+  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#!" class="btn btn-primary">Button</a>
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#!" class="btn btn-primary">Button</a>
+  </div>
+</div>
+
+</div> -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Product Cards</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-<body> 
-   <div style="height:85vh;">
-  <mat-toolbar color="#fff">
-    <mat-toolbar-row>
-      <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
-        <mat-icon>menu</mat-icon>
-      </button>
-      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-        <mat-icon>more_vert</mat-icon>
-      </button>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item>
-          <mat-icon>Account</mat-icon>
-          <span>Account</span>
-        </button>
-        <button mat-menu-item >
-          <mat-icon>Sign-in</mat-icon>
-          <span>Sign-in</span>
-        </button>
-        <button mat-menu-item>
-          <mat-icon>Items</mat-icon>
-          <span>Saved Items</span>
-        </button>
-      </mat-menu>
-      
-    
-      <span class="pol">Lorem ipsum dolor sit amet.</span>
-      <span class="menu-spacer"></span>
-      <div fxShow="true" fxHide.lt-md>
-        <div fxLayout="row" fxLayout.xs="column">
-          <div fxFlex="50" fxFlex.xs="100">
-            <!-- Content for the first column -->
-          </div>
-          <div fxFlex="50" fxFlex.xs="100">
-            <!-- Content for the second column -->
-          </div>
+
+  <mat-grid-list [cols]="breakpoint" rowHeight="2:0.5" (window:resize)="onResize($event)">
+
+  <div class="container">
+    <div class="row">
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+      <div class="card">
+        <img src="../assets/BOZD/LapBag/1696882992098.jpg" class="card-img-top" alt="Product 1">
+          <h5 class="card-title" a href="#" class="btn btn-primary">Laptop Bag</h5>
         </div>
-        
-        <!-- The following menu items will be hidden on both SM and XS screen sizes -->
-        <a href="#" mat-button>Home</a>
-        <a href="#" mat-button>Categories</a>
-        <a href="#" mat-button>Shop Now</a>
-        <!-- <div class="input-group">
-          <mdb-form-control>
-            <input #input mdbInput type="search" id="form1" class="form-control">
-            <label mdbLabel class="form-label" for="form1">Search</label>
-          </mdb-form-control>
-          <button type="button" class="btn btn-primary" (click)="search(input.value)">
-            <i class="fas fa-search"></i>
-          </button>
-        </div> -->
-        <a href="#" mat-button>Add to cart</a>
-        <!-- <a href="#" mat-button>Menu Item 5</a>
-        <a href="#" mat-button>Menu Item 6</a> -->
+    </div>    
+  
+<!-- </div> -->
+
+<!-- <div class="container"> -->
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+      <div class="card">
+        <img src="../assets/BOZD/belt/1696883737042.jpg" class="card-img-top" alt="Product 1">
+          <h5 class="card-title" a href="#" class="btn btn-primary">Belt</h5>
       </div>
-    </mat-toolbar-row>
-  </mat-toolbar>
+    </div>    
+<!-- </div> -->
 
-  <mat-sidenav-container fxFlexFill>
-    <mat-sidenav #sidenav>
-      <mat-nav-list>
-        <a (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
-        <a href="#" mat-list-item>Home</a>
-        <a href="#" mat-list-item>Categories</a>
-        <a href="#" mat-list-item>Shop Now</a>
-        <a href="#" mat-list-item>Add to cart</a>
-        <!-- <a href="#" mat-list-item>Menu Item 5</a>
-        <a href="#"mat-list-item>Menu Item 6</a> -->
-      </mat-nav-list>
-    </mat-sidenav> 
-    <!-- <mat-sidenav-content fxFlexFill> -->
-      
-      <!-- <mat-list role="list"> -->
-        <!-- <h1>CATEGORIES</h1>
-        <mat-list-item role="listitem">SHOE</mat-list-item>
-        <mat-list-item role="listitem">Bag</mat-list-item>
-        <mat-list-item role="listitem">Clothing</mat-list-item>
-        <mat-list-item role="listitem">Flat</mat-list-item>
-        <mat-list-item role="listitem">Heels</mat-list-item>
-        <mat-list-item role="listitem">Children's Wear</mat-list-item>
-      </mat-list> -->
-
-  
-    <mat-list>
-      <h1>Categories</h1>
-      <a href="#"><mat-list-item>All</mat-list-item></a>
-      <mat-divider></mat-divider>
-      <a href="#"><mat-list-item>Men Shoes</mat-list-item></a>
-      <mat-divider></mat-divider>
-      <a href="#"><mat-list-item>Hand Bags</mat-list-item></a>
-      <mat-divider></mat-divider>
-      <a href="#"><mat-list-item>Clothing</mat-list-item></a>
-      <mat-divider></mat-divider>
-      <a href="#"><mat-list-item>Sneakers</mat-list-item></a>
-      <mat-divider></mat-divider>
-      <a href="#"><mat-list-item>Laptop Bag</mat-list-item></a>
-      <mat-divider></mat-divider>
-      <a href="#"><mat-list-item>Flat</mat-list-item></a>
-      <mat-divider></mat-divider>
-      <a href="#"><mat-list-item>Platform</mat-list-item></a>
-      <mat-divider></mat-divider>
-      <a href="#"><mat-list-item>Sleepwear</mat-list-item></a>
-      <mat-divider></mat-divider>
-      <a href="#"><mat-list-item>T-Shirt</mat-list-item></a>
-      <mat-divider></mat-divider>
-      <a href="#"><mat-list-item>Polo</mat-list-item></a>
-      <mat-divider></mat-divider>
+<!-- <div class="container"> -->
+    <!-- Create responsive cards for eight products -->
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+      <div class="card">
+        <img src="../assets/BOZD/Handbag/1696882558468.jpg" class="card-img-top" alt="Product 1">
+          <h5 class="card-title" a href="#" class="btn btn-primary">Hand Bag</h5>
+      </div>
+    </div>    
+<!-- </div> -->
 
 
+<!-- <div class="container"> -->
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+      <div class="card">
+        <img src="../assets/BOZD/Men shoe/1696883736747.jpg" class="card-img-top" alt="Product 1">
+          <h5 class="card-title" a href="#" class="btn btn-primary">Men's Shoe</h5>
+      </div>
+    </div>    
+<!-- </div> -->
 
 
+<!-- <div class="container"> -->
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+      <div class="card">
+        <img src="../assets/BOZD/Polo/1697113651521.jpg" class="card-img-top" alt="Product 1">
+          <h5 class="card-title" a href="#" class="btn btn-primary">Polo</h5>
+      </div>
+    </div>    
+<!-- </div> -->
 
+<!-- <div class="container"> -->
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+      <div class="card">
+        <img src="../assets/BOZD/purse/1697113651728.jpg" class="card-img-top" alt="Product 1">
+          <h5 class="card-title" a href="#" class="btn btn-primary">Wallet</h5>      </div>
+    </div>    
+<!-- </div> -->
 
+<!-- <div class="container"> -->
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+      <div class="card">
+        <img src="../assets/BOZD/sandal/1696882992454.jpg" class="card-img-top" alt="Product 1">
+          <h5 class="card-title" a href="#" class="btn btn-primary">Hand Bag</h5>
+      </div>
+    </div>    
+<!-- </div> -->
 
-    </mat-list>
-  <!-- </mat-sidenav-content> -->
-  
-  </mat-sidenav-container> 
+<!-- <div class="container"> -->
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+      <div class="card">
+        <img src="../assets/BOZD/Shirt/1697113651894.jpg" class="card-img-top" alt="Product 1">
+          <h5 class="card-title" a href="#" class="btn btn-primary">Shirt</h5>
+          </div>
+    </div>    
+<!-- </div> -->
 
+<!-- <div class="container"> -->
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+      <div class="card">
+        <img src="../assets/BOZD/Slippers/1696882990650.jpg" class="card-img-top" alt="Product 1">
+          <h5 class="card-title" a href="#" class="btn btn-primary">Flat</h5>
+      </div>
+    </div>    
+<!-- </div> -->
+
+<!-- <div class="container"> -->
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+      <div class="card">
+        <img src="../assets/BOZD/sneakers/1696882693846.jpg" class="card-img-top" alt="Product 1">
+          <h5 class="card-title" a href="#" class="btn btn-primary">Sneakers</h5>
+      </div>
+    </div>    
+<!-- </div> -->
+
+<!-- <div class="container"> -->
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+      <div class="card">
+        <img src="../assets/BOZD/Trouser/1697113651966.jpg" class="card-img-top" alt="Product 1">
+          <h5 class="card-title" a href="#" class="btn btn-primary">Trousers</h5>
+      </div>
+    </div>    
+<!-- </div> -->
+
+<!-- <div class="container"> -->
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+      <div class="card">
+        <img src="../assets/BOZD/Heels/1696882991473.jpg" class="card-img-top" alt="Product 1">
+          <h5 class="card-title" a href="#" class="btn btn-primary">Heels</h5>
+      </div>
+    </div>    
+<!-- </div> -->
 </div>
+</div>
+<!-- Add Bootstrap JS (optional) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
 
 
-</body>
-</html>

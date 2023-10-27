@@ -1,0 +1,43 @@
+.flex-grid .flex-grid-tile {
+    padding: 24px;
+    transition: ease-in-out all 180ms;
+  }
+  
+  .flat-card {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    padding: 24px;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .flat-card img {
+    transition-timing-function: ease-in-out;
+    transition-duration: 180ms;
+    transition-property: width, margin-left;
+    position: relative;
+  }
+  
+  .mat-card-image {
+    display: block;
+  }
+  
+  /* large tablet */
+  @media (max-width:840px) {
+    .flex-grid .flex-grid-tile {
+      padding: 16px;
+    }
+  }
+  
+  @media (max-width:600px) {
+    .flex-grid .flex-grid-tile {
+      padding: 0;
+    }
+    .flat-card {
+      padding: 24px 16px;
+    }
+    .mat-card-md-image {
+      margin-right: 8px;
+    }
+  }
