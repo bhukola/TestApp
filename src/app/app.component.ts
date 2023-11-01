@@ -4,6 +4,7 @@ import * as $ from 'jquery';
 
 
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,12 +12,7 @@ import * as $ from 'jquery';
 })
 export class AppComponent {
   
-
-  
   }
-
-
-
 
 $(".bars").click(() => {
   $(".mobile__nav__fade__and__show__circle").toggleClass("open");
@@ -24,4 +20,6 @@ $(".bars").click(() => {
   $(".bars").toggleClass("toggle")
   
 })
+
+
 
